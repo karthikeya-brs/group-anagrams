@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Group Anagrams</title>
+    <link rel="icon" href="assets/img/brs-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+  </head>
+  <body>
+    
+    <header>
+            <div class="ReactTitle ">
+              <h3>Group Anagrams</h3>
+            </div>
+            <div class="d-flex ps-3 align-items-center">
+              <div class="flex-grow-1">
+              </div>
+            </div>
+    </header>
+    
+    <main role="main" class="container" style="margin-bottom: 100px;">
+        <div class="container"> 
+            <h5 class="text-start">
+                Group Anagrams </h5>
+      <p class="text-start">The "Group Anagrams" problem, a popular challenge in algorithmic interviews and on platforms like LeetCode, requires grouping words that are anagrams of each other. An anagram is a word formed by rearranging the letters of another word, using all original letters exactly once.    </p>
+            <p class="text-start">By removing spaces and converting the strings to lowercase letters, comparing the lengths, and sorting the characters in both strings, we are able to check if the two strings are anagrams of each other or not.EX: if the array is {"eat", "bat", "ate"}, the output of the problem will be [["bat"], ["ate", "eat"]].
+            </p>
+                 
+            <p>Given an array of strings strs, group the anagrams together. You can return the answer in any order
+                This code uses a Map to store anagrams. It iterates through each string in the input array,
+                 sorts its characters, and uses the sorted string as a key in the map. If the key is not present,
+                  it creates a new array for that key; otherwise, it adds the current string to the existing array.
+                 Finally, it converts the map values to an array and returns the result</p> <br>
+       <h5>Group Anagrams</h5>
+     <label for="inputArray">Enter an array of strings (comma-separated): </label>
+     <input type="text" id="inputArray"placeholder='["eat","tea","tan","ate","bat"]'>
+     <button type="button" class="" onclick="groupAnagrams()">Group Anagrams</button>
+
+     <div id="output"></div>
+     </div>
+          
+    </main>
+        
+    <footer class="footer footer-dark">
+      <div class="d-flex justify-content-center px-5">
+        <div>
+          <button
+            onclick="setTheme('#1A4B84')"
+            class="theme-switch theme-switch-chathams_blue"
+          ></button>
+          <button
+            onclick="setTheme('#991E14')"
+            class="theme-switch theme-switch-tamarillo"
+          ></button>
+          <button
+            onclick="setTheme('#FEAD06')"
+            class="theme-switch theme-switch-yellow_sea"
+          ></button>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/JS/groupsang.js"></script>
+    <script src=""></script>
+    <script src="assets/JS/theme.js" defer></script>
+  </body>
+</html>
